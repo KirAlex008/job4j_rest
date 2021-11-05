@@ -8,7 +8,7 @@ services:
 
 before_install:
     - psql -c 'create database fullstack_auth;' -U postgres
-
+    - chmod +x mvnw
 
 sudo: false
 
