@@ -1,33 +1,74 @@
-README.md
+## generic files to ignore
+*~
+*.lock
+*.DS_Store
+*.swp
+*.out
+*.log
+
+# rails specific
+*.sqlite3
+config/database.yml
+log/*
+tmp/*
+
+# java specific
+*.class
+
+# python specific
+*.pyc
+
+# xcode/iphone specific
+build/*
+*.pbxuser
+*.mode2v3
+*.mode1v3
+*.perspective
+*.perspectivev3
+*~.nib
+
+# akka specific
+logs/*
+
+# sbt specific
 target/
-!.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
+project/boot
+lib_managed/*
+project/build/target
+project/build/lib_managed
+project/build/src_managed
+project/plugins/lib_managed
+project/plugins/target
+project/plugins/src_managed
+project/plugins/project
 
-### STS ###
-.apt_generated
-.classpath
-.factorypath
-.project
+core/lib_managed
+core/target
+pubsub/lib_managed
+pubsub/target
+
+# eclipse specific
+.metadata
+jrebel.lic
 .settings
-.springBeans
-.sts4-cache
+.classpath
+.project
 
-### IntelliJ IDEA ###
-.idea
-*.iws
+.ensime*
+*.sublime-*
+.cache
+
+# intellij
+*.eml
 *.iml
 *.ipr
+*.iws
+.*.sw?
+.idea
 
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
+# paulp script
+/.lib/
 
-### VS Code ###
-.vscode/
+build
+.gradle
+*.pid

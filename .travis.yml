@@ -3,6 +3,13 @@ language: java
 jdk:
   - openjdk14
 
+services:
+    - postgresql
+
+before_install:
+    - psql -c 'create database fullstack_auth;' -U postgres
+
+
 sudo: false
 
 env:
