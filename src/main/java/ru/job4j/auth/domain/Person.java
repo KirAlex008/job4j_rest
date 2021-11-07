@@ -59,7 +59,7 @@ public class Person {
             return false;
         }
         Person person = (Person) o;
-        return id == person.id;
+        return id.equals(person.id);
     }
 
     @Override

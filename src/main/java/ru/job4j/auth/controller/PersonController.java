@@ -29,7 +29,7 @@ public class PersonController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<Person> findById(@PathVariable int id) throws EntityNotFoundException {
+    public ResponseEntity<Person> findById(@PathVariable int id) {
         Optional<Person> person = this.persons.findById(id);
         return new ResponseEntity<Person>(
                 person.orElse(new Person()),
