@@ -59,15 +59,6 @@ public class PersonControllerTest {
                 .andExpect(jsonPath("$.password").value("password"));
     }
 
-   /* @Test
-    public void givenIdWhenGetNotExistingPersonThenStatus404() throws Exception {
-        Mockito.when(personRepository.findById(Mockito.any())).
-                thenReturn(Optional.empty());
-        mockMvc.perform(
-                get("/person/1"))
-                .andExpect(status().isNotFound());
-   }*/
-
     @Test
     public void whenCreatePersonThenStatus201() throws Exception {
         Person p1 = new Person(1, "login", "password");
